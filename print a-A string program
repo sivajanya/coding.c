@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    char s[1000];
+    printf( "enter a string\n");
+    gets(s);
+    int i;
+    for(i=0;s[i]!='\0';i++)
+    {
+        if(s[i]== 'a')
+        {
+            s[i]=s[i]-32;
+        }
+        else
+        s[i]=s[i]-0;
+    }
+    puts(s);
+    return 0;
+}
